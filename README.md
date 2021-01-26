@@ -7,8 +7,6 @@
 
 ## Projeto destinada a Jogadores de RPG a encontrar sua proxima aventura perto de sua localização
 
-sei la
-
 
 <h3 id="#sobre"> Sobre o Projeto </h3>
 <p> Projeto tem como proposito localizar jogadores ou mesas de RPG proximo de você para iniciar sua proxima aventura. </p>

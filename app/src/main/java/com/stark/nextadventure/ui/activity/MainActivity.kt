@@ -1,7 +1,8 @@
-package com.stark.nextadventure
+package com.stark.nextadventure.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.stark.nextadventure.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

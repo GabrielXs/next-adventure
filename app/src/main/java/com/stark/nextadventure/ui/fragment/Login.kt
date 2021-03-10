@@ -26,8 +26,15 @@ class Login : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.button).apply {
             this.setOnClickListener {
+               val direction = LoginDirections.actionLoginToDashboard()
+                navControl.navigate(direction)
+            }
+        }
 
-//                navControl.navigate()
+        view.findViewById<Button>(R.id.button_signup).apply {
+            this.setOnClickListener {
+                val directions = LoginDirections.actionLoginToSignUp()
+                navControl.navigate(directions)
             }
         }
     }

@@ -14,7 +14,10 @@
             app:destination="@id/signUp" />
         <action
             android:id="@+id/action_login_to_dashboard"
-            app:destination="@id/dashboard" />
+            app:destination="@id/dashboard"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/signUp"
@@ -25,22 +28,5 @@
         android:id="@+id/dashboard"
         android:name="com.stark.nextadventure.ui.fragment.Dashboard"
         android:label="fragment_dashboard"
-        tools:layout="@layout/fragment_dashboard" >
-        <action
-            android:id="@+id/action_dashboard_to_searchAdventure"
-            app:destination="@id/searchAdventure" />
-        <action
-            android:id="@+id/action_dashboard_to_managerCharacter"
-            app:destination="@id/managerCharacter" />
-    </fragment>
-    <fragment
-        android:id="@+id/searchAdventure"
-        android:name="com.stark.nextadventure.ui.fragment.SearchAdventure"
-        android:label="fragment_search_adventure"
-        tools:layout="@layout/fragment_search_adventure" />
-    <fragment
-        android:id="@+id/managerCharacter"
-        android:name="com.stark.nextadventure.ui.fragment.ManagerCharacter"
-        android:label="fragment_manager_character"
-        tools:layout="@layout/fragment_manager_character" />
+        tools:layout="@layout/fragment_dashboard" />
 </navigation>
